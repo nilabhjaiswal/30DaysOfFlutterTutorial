@@ -1,21 +1,25 @@
 import "package:flutter/material.dart";
+import "package:meta/meta.dart";
 
+@immutable
+// ignore: must_be_immutable
 class HomePage extends StatelessWidget {
   int num = 108;
+
+  HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tutorial_App"),
+        title:const Text("Tutorial_App"),
       ),
       body: Center(
-        child: Container(
+        child: Material(
           child: Text("Om ganeshay namah $num"),
         ),
       ),
-    drawer: Drawer(),
+      drawer:const Drawer(),
     );
   }
 }
-
