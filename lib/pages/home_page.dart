@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:flutter_application_1/wigets/drawer.dart';
 import "package:meta/meta.dart";
 
 @immutable
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
           child: Text("Om ganeshay namah $num"),
         ),
       ),
-      drawer:const Drawer(),
+      drawer:const MyDrawer(),
     );
   }
 }
